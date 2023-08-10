@@ -5,12 +5,6 @@ const Pusher = require("pusher");
 const cors = require("cors");
 const app = express();
 const port = process.env.PORT || 3000;
-const pusher = new Pusher({
-  app_id: "1640419",
-  key: "eba7e7f22153494db15f",
-  secret: "fc974aa4498d41c5db07",
-  cluster: "us2",
-});
 app.use(express.json());
 app.use(cors());
 const connection_url = "mongodb://127.0.0.1:27017/messages";
